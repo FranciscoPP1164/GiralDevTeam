@@ -1,0 +1,1 @@
+en este commit se realizan algunos cambios a los estilos y se agregan meta datos a la pagina, ademas de agregar informacion al inicio de la pagina
