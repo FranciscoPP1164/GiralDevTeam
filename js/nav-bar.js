@@ -22,19 +22,12 @@ window.onload = () => {
                 }
             }
         })
-    }, { threshold: 0.7 });
+    }, { threshold: 0.6 });
 
     sections.forEach((section) => observer.observe(section));
-
-    list.forEach((item) => item.addEventListener('click', activeLink));
 
     function offButton() {
         list.forEach((item) =>
             item.classList.remove("active"));
     }
-
-    function activeLink() {
-        offButton()
-        this.classList.add("active")
-    };
 }

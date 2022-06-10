@@ -14,7 +14,7 @@ body {
     background: #38393f;
     color: rgb(228, 228, 228);
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /*header*/
@@ -43,6 +43,7 @@ header h1 {
     position: fixed;
 }
 
+/*navbar*/
 #asideMenuList {
     list-style: none;
 }
@@ -98,7 +99,8 @@ header h1 {
     background: #71d636 !important;
     color: rgb(4, 82, 4) !important;
     font-size: 18px !important;
-    box-shadow: 3px 3px 40px #71d636;
+    box-shadow: 0 0 50px 5px #71d636;
+
 }
 
 /*article*/
@@ -114,33 +116,169 @@ section {
     box-shadow: 4px 4px 15px #1a1a1d;
 }
 
-section h2 {
+section h2,
+h3 {
+    font-size: 40px;
     text-shadow: 0 0 10px rgb(168, 168, 168);
     font-variant: small-caps;
-    margin: 10px 0;
     font-family: 'Prompt', sans-serif;
 }
 
-section h2::first-letter {
-    font-size: 60px;
+section h2::first-letter,
+h3::first-letter {
+    font-size: 130%;
     color: #71d636;
     text-shadow: 0 0 10px #71d636;
 }
 
-#perfil .contenedorImagen {
+/*inicio*/
+/*foto de perfil*/
+.foto-de-perfil {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 20px #151618;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.perfil-contenedorImagen {
     width: 350px;
     height: 350px;
     overflow: hidden;
-    display: inline-block;
-    box-shadow: 0 0 20px #151618;
+    border-radius: 50%;
 }
 
-#perfil .contenedorImagen img {
+.perfil-contenedorImagen img {
     width: 350px;
     transition: 1s;
+    border-radius: 50%;
 }
 
-#perfil .contenedorImagen img:hover {
+.perfil-contenedorImagen img:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
+
+#perfil p {
+    font-size: 30px;
+}
+
+/*sobre mi*/
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nosotros-contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: justify;
+    line-height: 30px;
+    margin: 15px 0;
+}
+
+.nosotros-descripcion {
+    width: 500px;
+    box-shadow: 0 0 10px #151618;
+    padding: 5px 5px;
+}
+
+.nosotros-info {
+    width: 500px;
+    line-height: 52px;
+    padding: 10px 5px;
+    box-shadow: 0 0 10px #151618;
+    text-align: left;
+
+}
+
+.nosotros-info p {
+    margin-left: 20%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.nosotros-habilidades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: justify;
+    line-height: 42px;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.nosotros-habilidades h3 {
+    text-align: center;
+}
+
+.nosotros-habilidades-fuertes {
+    padding: 10px 5px;
+    box-shadow: 0 0 10px #151618;
+    width: 500px;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+
+.contenedor-bar {
+    outline: 2px solid #151515;
+    text-align: right;
+    color: #333;
+    font-size: 25px;
+    width: 100%;
+}
+
+.bar {
+    background: #77e736;
+}
+
+.bar p {
+    margin-right: 5px;
+}
+
+.php {
+    width: 60%;
+}
+
+.javascript {
+    width: 100%;
+}
+
+.typescript {
+    width: 60%;
+}
+
+.java {
+    width: 40%;
+}
+
+.oracle {
+    width: 20%;
+}
+
+.nosotros-educacion {
+    padding: 10px 5px;
+    box-shadow: 0 0 10px #151618;
+    width: 500px;
+}
+
+.nosotros-educacion h3 {
+    margin-bottom: 10px;
+}
+
+.nosotros-educacion h4 {
+    padding: 5px;
+}
+
+.nosotros-educacion p {
+    line-height: 30px;
+}
+
+/*servicios*/
