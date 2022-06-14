@@ -1,1 +1,1 @@
-En este commit se agrega la sección "sobre mi", se realizan cambios a los styles previamente creados y se agregan los styles de la sección "sobre mi"
+En este commit se cambia el enfoque de Andres Giraldo(una sola person) a GiralDev(una compañia) y tambien se eliminan lineas inecesarias

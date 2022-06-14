@@ -1,5 +1,5 @@
 window.onload = () => {
-    const list = document.querySelectorAll('.list');
+    const lista = document.querySelectorAll('.list');
     const sections = document.querySelectorAll('section');
     const observer = new IntersectionObserver((entradas, observer) => {
         entradas.forEach((entrada) => {
@@ -27,7 +27,7 @@ window.onload = () => {
     sections.forEach((section) => observer.observe(section));
 
     function offButton() {
-        list.forEach((item) =>
+        lista.forEach((item) =>
             item.classList.remove("active"));
     }
 }
