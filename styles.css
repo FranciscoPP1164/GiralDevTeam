@@ -202,6 +202,10 @@ section p {
     width: 30%;
 }
 
+.nosotros-diseños-content .subseccion:hover {
+    animation: expand .6s forwards;
+}
+
 .nosotros-content p {
     text-align: center;
 }
@@ -222,6 +226,9 @@ section p {
     padding: 5px;
 }
 
+.servicios-content .subseccion:hover {
+    animation: expand .6s forwards;
+}
 
 .servicios-content p {
     padding: 0 10px;
@@ -240,11 +247,10 @@ section p {
     display: flex;
     width: 30%;
     padding: 0;
-    transition: .6s;
 }
 
 .proyectos-content .subseccion:hover {
-    transform: scale(1.1);
+    animation: expand .6s forwards;
 }
 
 .proyectos-content button {
@@ -279,10 +285,19 @@ section p {
 #contacto {
     display: flex;
     flex-direction: column;
+    padding: 25px 0;
+    margin-bottom: 0;
 }
 
 #contacto h3 {
     line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.contacto-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 .contacto-info {
@@ -317,4 +332,12 @@ section p {
     border-radius: 50%;
     background-color: rgb(228, 228, 228);
     margin: 0 4px;
+}
+
+@keyframes expand {
+    from {}
+
+    to {
+        transform: scale(1.1);
+    }
 }
