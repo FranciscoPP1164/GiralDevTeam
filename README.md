@@ -1,1 +1,1 @@
-En este commit se cambia el enfoque de Andres Giraldo(una sola person) a GiralDev(una compañia) y tambien se eliminan lineas inecesarias
+En este commit se termina el contenido de la pagina web y su diseño en desktop
