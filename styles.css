@@ -82,6 +82,7 @@ header h1 {
     width: 100%;
     color: rgb(168, 168, 168);
     transition: .25s;
+    cursor: pointer;
 }
 
 #asideMenuList li:first-child button {
@@ -125,18 +126,26 @@ section h2 {
     font-family: 'Prompt', sans-serif;
 }
 
-section h2::first-letter,
-section h3::first-letter {
-    font-size: 130%;
-    color: #71d636;
-    text-shadow: 0 0 10px #71d636;
-}
-
 section h3 {
     font-size: 30px;
     text-shadow: 0 0 10px rgb(168, 168, 168);
     font-variant: small-caps;
     font-family: 'Prompt', sans-serif;
+}
+
+section h4 {
+    font-size: 20px;
+    text-shadow: 0 0 10px rgb(168, 168, 168);
+    font-variant: small-caps;
+    font-family: 'Prompt', sans-serif;
+}
+
+section h2::first-letter,
+section h3::first-letter,
+section h4::first-letter {
+    font-size: 130%;
+    color: #71d636;
+    text-shadow: 0 0 10px #71d636;
 }
 
 section p {
@@ -149,23 +158,23 @@ section p {
     box-shadow: 0 0 15px 5px #1a1a1d;
     padding: 5px 10px;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 /*inicio*/
 .perfil-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .perfil-content p {
-    width: 50%;
+    width: 40%;
 }
 
 .perfil-content img {
-    width: 500px;
-    height: 250px;
+    width: 40%;
 }
 
 /*sobre nosotros*/
@@ -198,14 +207,88 @@ section p {
 }
 
 /*servicios*/
+.servicios-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.servicios-content .subseccion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 40%;
+    padding: 5px;
+}
+
+
+.servicios-content p {
+    padding: 0 10px;
+    text-align: center;
+}
+
 /*proyectos*/
+.proyectos-content {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-evenly;
+}
+
+.proyectos-content .subseccion {
+    display: flex;
+    width: 30%;
+    padding: 0;
+    transition: .6s;
+}
+
+.proyectos-content .subseccion:hover {
+    transform: scale(1.1);
+}
+
+.proyectos-content button {
+    border: none;
+    background: none;
+    color: rgb(228, 228, 228);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.proyectos-content button div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.proyectos-content img {
+    display: block;
+    max-width: 100%;
+}
+
+.proyectos-content p {
+    text-align: center;
+    color: rgb(228, 228, 228);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
 /*contacto*/
 #contacto {
     display: flex;
     flex-direction: column;
 }
 
+#contacto h3 {
+    line-height: 1.5;
+}
+
 .contacto-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     list-style: none;
     margin: 5px 0;
 }
@@ -214,6 +297,7 @@ section p {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    column-gap: 10px;
     margin: 5px 0;
 }
 
