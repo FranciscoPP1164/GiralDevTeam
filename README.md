@@ -1,1 +1,1 @@
-En este commit se termina el contenido de la pagina web y su diseño en desktop
+pagina de presentacion de la compañia GiralDev
