@@ -8,7 +8,7 @@
     <meta name="description" content="pagina de presentacion de Andres Felipe Giraldo">
     <meta name="autor" content="Francisco Fernando Parra Penagos">
     <link rel="stylesheet" href="styles.css">
-    <script src="js/observers.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,6 +23,11 @@
     <aside>
         <nav>
             <div id="asideMenu">
+                <div class="menu-responsive">
+                    <button id="menu-responsive-button">
+                        <img src="assets/menu.png" alt="">
+                    </button>
+                </div>
                 <ul id="asideMenuList">
                     <li><a href="#inicio"><button class="list active" id="btn-inicio">INICIO</button></a></li>
                     <li><a href="#nosotros"><button class="list" id="btn-nosotros">NOSOTROS</button></a></li>
@@ -34,7 +39,7 @@
         </nav>
     </aside>
 
-    <article>
+    <article id="body-content">
         <section id="perfil">
             <h2>Empresa de desarrollo de software</h2>
             <div class="perfil-content">
@@ -230,12 +235,13 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <h3>Háblanos sobre tu problema, cuentanos como te podemos ayudar<br>y nosotros lo haremos realidad</h3>
+            <h3>Háblanos sobre tu problema<br>cuentanos como te podemos ayudar<br>y nosotros lo haremos realidad</h3>
             <div class="contacto-content">
                 <ul class="contacto-info">
                     <li><i class="fa-solid fa-location-dot"></i>
                         Santiago de Cali, Valle del Cauca, Colombia
                     </li>
+
                     <li><i class="fa-solid fa-phone"></i>
                         (+57) 316 825 8183
                     </li>
@@ -245,9 +251,15 @@
                     </li>
                 </ul>
                 <div class="contacto-links">
-                    <a href="https://www.linkedin.com/in/andresfgiraldo/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/andresfgiraldo"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/AndresGiraldo91"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/andresfgiraldo/" target="_blank">
+                        <img src="assets/logotipo-de-linkedin.png" alt="">
+                    </a>
+                    <a href="https://github.com/andresfgiraldo" target="_blank">
+                        <img src="assets/GitHub icon.png" alt="">
+                    </a>
+                    <a href="https://twitter.com/AndresGiraldo91" target="_blank">
+                        <img src="assets/gorjeo.png" alt="">
+                    </a>
                 </div>
             </div>
         </section>
