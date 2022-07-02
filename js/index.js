@@ -27,7 +27,7 @@ window.onload = () => {
                 }
             }
         })
-    }, { threshold: 0.55 });
+    }, { threshold: 0.4 });
 
     sections.forEach((section) => observer.observe(section));
 
